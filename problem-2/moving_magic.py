@@ -9,14 +9,15 @@ def initial_state():
 
 def is_goal(s):
     count = 0
+    #Row
     for i in range(0,9,3):
         if s[0][i]+s[0][i+1]+s[0][i+2] != 15:
             return False
-
+    #Column
     for i in range(3):
         if s[0][i]+s[0][i+3]+s[0][i+6] !=15:
             return False
-
+    #diagonal
     if s[0][2]+s[0][4]+s[0][6] !=15:
         return False
 
