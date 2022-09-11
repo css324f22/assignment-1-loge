@@ -49,5 +49,5 @@ def move_nine(s, new_r, new_c):
     board, r, c = s
     new_board = list(board)
     new_board[r*3 + c] = new_board[new_r*3 + new_c]
-    new_board[new_r*3 + new_c] = 0
+    new_board[new_r*3 + new_c] = 9
     return (tuple(new_board), new_r, new_c)
