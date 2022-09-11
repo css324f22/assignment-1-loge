@@ -23,15 +23,19 @@ def is_goal(s):
 
 def successors(s):
     _, r, c = s
+    #move up
     new_r, new_c = r-1, c
     if is_valid(new_r, new_c):
         yield move_nine(s, new_r, new_c), 1
+    #move down
     new_r, new_c = r + 1, c
     if is_valid(new_r, new_c):
         yield move_nine(s, new_r, new_c), 1
+    #move left
     new_r, new_c = r, c-1
     if is_valid(new_r, new_c):
         yield move_nine(s, new_r, new_c), 1
+    #move right
     new_r, new_c = r, c+1
     if is_valid(new_r, new_c):
         yield move_nine(s, new_r, new_c), 1
