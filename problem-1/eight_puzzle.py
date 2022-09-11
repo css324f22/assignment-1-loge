@@ -36,6 +36,7 @@ def move_blank(s, new_r, new_c):
     new_board[new_r*3 + new_c] = 0
     return (tuple(new_board), new_r, new_c)
 
+
 def h1(s):
     goal = (1, 2, 3, 4, 5, 6, 7, 8, 0)
     board, _, _ = s
@@ -48,6 +49,10 @@ def h1(s):
             res += 1
     return res
 
+
 def h2(s):
+
+
     # implement this function
-    return 0
+awdw
+return 0
