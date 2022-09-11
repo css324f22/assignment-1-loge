@@ -52,7 +52,16 @@ def h1(s):
 
 
 def h2(s):
-
-
     # implement this function
+    sum = 0
+    for i in range(0,9):
+        if s[0][i] != 0:
+            R = i//3
+            C = i%3
+            RG = (s[0][i] - 1)//3
+            CG = (s[0][i] - 1)%3
+            r = abs(R - RG)
+            c = abs(C - CG)
+            N = r+c
+            sum += N
     return 0
