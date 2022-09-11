@@ -20,6 +20,8 @@ def is_goal(s):
     #diagonal
     if s[0][2]+s[0][4]+s[0][6] !=15:
         return False
+    if s[0][0]+s[0][4]+s[0][8] !=15:
+        return False
 
     return True
 
