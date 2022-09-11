@@ -55,5 +55,4 @@ def h2(s):
 
 
     # implement this function
-awdw  pipe GA JORK
-return 0
+    return 0
